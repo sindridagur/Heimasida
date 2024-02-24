@@ -206,6 +206,15 @@
                                       <source src="images/Verkefni2/undirbuningur_framleidsla_fusion.mp4" type="video/mp4">
                                       Your browser does not support the video tag.
                                     </video>
+                                    <p>
+                                        Eftir að búið var að fylgja myndskeiðinu að ofan ætti maður að vera kominn með .dxf skjal. Þetta skjal var þá sent í tölvu tengdum laserskera og opnað þar í Inkscape. Í inkscape þurfti aðeins að draga skurðarferilinn inn á vinnusvæðið (canvas) og stilla width í fill and stroke á 0.02 mm. Passa þarf að vera búinn að velja alla ferlanna (ctrl+a) áður en þykktin í fill and stroke er valin. Þá var ýtt á print í inkscape og opnaðist þá forrit laserskerans (Epilog Dashboard). Þar þurfti að stilla auto focus á thickness, importa eiginleikum efnisins sem var í okkar tilfelli 3mm akrýl og stilla þykktina. Það kom í ljós að gott væri að lækka hraðan aðeins í 20% til þess að laserinn næði að skera alveg í gegnum efnið. Þá var skurðarferlinum komið fyrir á góðum stað, þar sem hann komst fyrir og nýtti efnið best. Hér má sjá mynd af forritinu Epilog Dashboard þar sem á reyndar eftir að breyta hraðanum í 20%. 
+                                    </p>
+                                    <center>
+                                        <img src= "images/Verkefni2/epilog.JPEG" alt ="Mynd sem sýnir forrit laserskerans, Epilog Dashboard" width = 70%>
+                                    </center>
+                                    <p>
+                                        Næst er ýtt á print og farið að innbyggða skjá laserskerans. Þá er kveikt á gasinu með því að snúa lokanum hægra megin við skeran og þá ýtt á play hnappinn á prentaranum. Þá ætti prentarinn að hefjast handa við skurðinn.
+                                    </p>
                                 </section>
                                 
                                 <section> 
@@ -219,11 +228,50 @@
                                         Nú var farið í að prófa hversu vel festingar virkuðu, þ.e. hvort press fit næðist. Stillingar á kerf og þykkt efnis voru notaðar til þess að ná press fit. Stærra kerf var notað en mældist í hluta 2-1 til þess að ná press fit. Það hefði verið hægt að gera þetta á annan hátt en þessi leið var talin ákjósanleg. 
                                     </p>
                                     <p>
-                                        Áður en prófanir hófust höfðu tveir samnemendur náð pressfit með sama efni (3mm glært akrýl) og þeir notuðu 0.16mm kerf og ýmist 2.9mm eða 3.1mm þykkar plötur. Ég mældi mína plötu fyrst sem 3mm þykka og ákvað því að prófa 0.16mm kerf. Ákveðið var að prófa bæði fingurlið og wedge lið. Á næstu mynd má sjá það sem átti að skera út í þessari fyrstu prófun.
+                                        Áður en prófanir hófust höfðu tveir samnemendur náð pressfit með sama efni (3mm glært akrýl) og þeir notuðu 0.16mm kerf og höfðu ýmist 2.9mm eða 3.1mm þykkar plötur. Ég mældi mína plötu fyrst sem 3mm þykka og ákvað því að prófa 0.16mm kerf. Ákveðið var að prófa bæði fingurlið og wedge lið. Á næstu mynd má sjá það sem átti að skera út í þessari fyrstu prófun.
                                     </p>
                                     <center>
                                         <img src ="images/Verkefni2/test_svg.png" alt="Fyrsta test" width=60%>
                                     </center>
+                                    <p>
+                                        Þetta fór ekki betur en að íhlutirnir brotnuðu þegar reynt var að setja þá saman. Því var nauðsynlegt að gera aðra prufu og var þá stillt á 0.155 mm kerf. Þykktin á plötunni var einnig aftur mæld sem 3.1 mm og var því þykktin stillt á það. Þegar hlutirnir úr þessu testi voru settir saman voru hlutirnir alls ekki geirnegldir, þ.e. alltof lausir. Dregin var sú ályktun að efnið væri 3.1mm þykkt en að það þyrfti að auka kerf til þess að ná pressfit. Gerð voru 3 test í viðbót þar sem þykktin á efninu var alltaf höfð sem 3.1 mm með mismunandi kerf. Niðurstöðurnar má sjá í töflunni að neðan. Það kom best út að nota 0.21 mm sem kerf.
+                                    </p>
+                                    <center>
+                                        <img src="images/Verkefni2/test_tafla.png" alt = "Tafla fyrir fit með mismunandi kerf og þykkt" width = 80%>
+                                    </center>
+                                    <p>
+                                        Við prófanir var ákveðið að það væri betra að nota kíl til þess að festa wedge festingarnar. Á næstu mynd má sjá kílinn sem var teiknaður parametrískt. Ákveðið var að hafa hann 4 mm að hæð og með halla 15°, nokkrar hæðir og hallar voru prófaðar en besta útkoman var 4 mm og 15°. Reynt var að bæta honum við heildar þrívíddarmyndina í fusion en það gekk ekki, forritið crashaði þegar reynt var að fara aftur í tímalínunni og ekki fanst lausn á því vandamáli þegar leitað var á netinu. Kíllinn var því hafður í sér skjali. 
+                                    </p>
+                                    <center>
+                                        <img src ="images/Verkefni2/kill.png" alt="Kíll sem var notaður" width=70%>
+                                    </center>
+                                </section>
+                                <section>
+                                    <h2>Hluti 2-5</h2>
+                                    <h3>Framleiðsla fartölvustands</h3>
+                                    <p>
+                                        Nú var farið sömu skref og sýnt var í myndbandinu í hluta 2-3, nema kerf var stillt á 0.21 mm eins og prufanir sýndu að væri passlegt. Þá fékkst .dxf skjal sem hægt var að færa í tölvuna tengdum laserskeranum. Í inkscape var þykktin í fill and stroke stillt á 0.02 mm og ýtt á print. Í Epilog Dashboard er náð í eiginleika fyrir 3mm akrýl, stillt á thickness í auto focus, stillt á 20% hraða og 3.1mm þykkt. Þá fór prentarinn í gang og má sjá hluta af skurðinum sem hann framkvæmdi í næsta myndskeiði.   
+                                    </p>
+                                    <video width=100% controls>
+                                      <source src="images/Verkefni2/skurdur.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                    <p>
+                                        Skurðurinn tók um 10 mínotur. Skurðarferilinn má sjá á næstu mynd.
+                                    </p>
+                                    <center>
+                                        <img src="images/Verkefni2/laptop_stand_svg.png" alt="Skurðarferill fyrir fartölvustand" width=70%>
+                                    </center>
+                                    <p>
+                                        Skurðurinn kom vel út og voru kílarnir þá skornir út með því að fylgja sömu skrefum og með hina íhlutina. Hlutirnir smellpössuðu og var því hafist handa við að setja þá saman. Lokaniðurstöðu má sjá á næstu tveimur myndum. Ein sýnir standinn sjálfann og sú næsta standinn með fartölvu á sér.  
+                                    </p>
+                                    <div style="display: flex; justify-content: center;">
+                                        <img src="images/Verkefni2/Standur_an_tolvu.JPEG" width = 30%>
+                                        <img src="images/Verkefni2/stnadur_med_tolfu.JPEG" width = 50%>
+                                    </div>
+                                    <p>
+                                        Standurinn var mjög fallegur að sjá en virknin mun síðri. Hann var mjög óstöðugur eins og sjá má á næsta myndbandi.
+                                    </p>
                                 </section>
                                 
 							</div>
